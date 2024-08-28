@@ -1,0 +1,133 @@
+#hero {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#hero .nav {
+  height: 100vh;
+  width: 27%;
+  background-color: rgb(134, 134, 134);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #f0f0f0;
+}
+#hero .nav img {
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 50%;
+  border: 0.6rem solid #f0f0f0;
+  margin-top: 0.3em;
+}
+#hero .nav p {
+  font-size: 0.32em;
+  text-transform: capitalize;
+  text-align: center;
+}
+#hero .nav div {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+#hero .nav div ul {
+  margin: 0;
+  padding: 0%;
+}
+#hero .nav div ul li {
+  display: flex;
+  line-height: 1.3em;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 0.32em;
+}
+#hero .nav div ul li:hover {
+  color: rgba(14, 127, 180, 0.9882352941);
+  letter-spacing: 0.5em;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+#hero .right {
+  width: 73%;
+  font-size: 0.32em;
+  text-transform: capitalize;
+  padding-left: 2em;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #868686;
+  position: relative;
+}
+#hero .right label {
+  position: absolute;
+  align-self: flex-start;
+  height: 0.5em;
+  left: 1em;
+  top: 10px;
+  color: #868686;
+}
+#hero .right input {
+  visibility: hidden;
+}
+#hero .right h1 {
+  margin: 0;
+}
+#hero .right p {
+  margin: 0;
+  margin-bottom: 0.6em;
+  text-wrap: wrap;
+  display: flex;
+  text-align: left;
+  text-justify: newspaper;
+}
+#hero .right a {
+  text-decoration: none;
+  border: 0.1em solid rgba(14, 127, 180, 0.9882352941);
+  background-color: rgba(14, 127, 180, 0.9882352941);
+  border-radius: 0.3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 3px;
+  padding: 6px 8px;
+  text-decoration: none;
+  width: fit-content;
+  color: #f0f0f0;
+}
+#hero .right a:hover {
+  transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    position: relative;
+  }
+  #hero .nav {
+    position: absolute;
+    z-index: 11;
+    width: 100vw;
+  }
+  #hero .right {
+    position: absolute;
+    background-color: transparent;
+  }
+  #hero .right label {
+    z-index: 111;
+    right: 1em;
+    top: 1em;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: rgba(14, 127, 180, 0.9882352941);
+  }
+}/*# sourceMappingURL=Hero.css.map */

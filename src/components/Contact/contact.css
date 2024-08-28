@@ -1,0 +1,182 @@
+#contact {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3em;
+  text-transform: capitalize;
+  background-image: linear-gradient(0deg, rgba(1, 81, 118, 0.504), rgba(5, 78, 111, 0.57)), url(images/pixels.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(240, 240, 240, 0.9411764706);
+}
+#contact > * {
+  margin: 0%;
+}
+#contact p {
+  font-size: smaller;
+  margin-bottom: 0.3em;
+}
+#contact #cntact_card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1em;
+  background-color: rgba(240, 240, 240, 0.8);
+  min-height: 70vh;
+  margin-bottom: 0.1em;
+  padding: 0.1em;
+  border-radius: 0.4em;
+  text-justify: newspaper;
+  overflow: hidden;
+}
+#contact #cntact_card #left {
+  flex: 1 1 2em;
+  border-radius: 0.4em;
+  background-color: rgba(14, 127, 180, 0.9882352941);
+  font-size: 0.5em;
+  padding: 0 0.8em;
+  max-width: 18em;
+}
+#contact #cntact_card #left h5 {
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+}
+#contact #cntact_card #left h6 {
+  margin: 0px;
+}
+#contact #cntact_card #left div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0.5em 0;
+}
+#contact #cntact_card #left div a {
+  text-decoration: none;
+  margin-left: 0.7em;
+  color: inherit;
+}
+#contact #cntact_card #left div address {
+  margin-left: 0.7em;
+}
+#contact #cntact_card #right {
+  flex: 3 1 5em;
+}
+#contact #cntact_card #right form {
+  padding: 1.3em;
+}
+#contact #cntact_card #right form .row_1,
+#contact #cntact_card #right form .row_2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+#contact #cntact_card #right form .row_1 .first,
+#contact #cntact_card #right form .row_2 .first {
+  flex: 1 1 auto;
+  position: relative;
+  width: 45%;
+  height: 0.5em;
+  padding: 3px;
+}
+#contact #cntact_card #right form .row_1 .first .label,
+#contact #cntact_card #right form .row_2 .first .label {
+  position: absolute;
+  top: 0em;
+  z-index: 1;
+  font-size: 0.5em;
+  color: #868686;
+  transition: 0.5s ease-in-out;
+}
+#contact #cntact_card #right form .row_1 .first input,
+#contact #cntact_card #right form .row_2 .first input {
+  position: absolute;
+  top: 0em;
+  width: 100%;
+  font-size: 0.5em;
+  text-transform: capitalize;
+  color: #868686;
+  padding-left: 0.2em;
+  height: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #868686;
+  font-weight: bold;
+  background-color: transparent;
+  z-index: 222;
+}
+#contact #cntact_card #right form .row_1 .first input:focus ~ .label, #contact #cntact_card #right form .row_1 .first input:valid ~ .label,
+#contact #cntact_card #right form .row_2 .first input:focus ~ .label,
+#contact #cntact_card #right form .row_2 .first input:valid ~ .label {
+  top: -1em;
+  transform: scale(0.78);
+}
+#contact #cntact_card #right form .row_2 {
+  margin-top: 1em;
+}
+#contact #cntact_card #right form .row_3 {
+  width: 100%;
+}
+#contact #cntact_card #right form .row_3 label {
+  font-size: 0.6em;
+  color: rgba(14, 127, 180, 0.9882352941);
+}
+#contact #cntact_card #right form .row_3 textarea {
+  width: 100%;
+  max-height: 10em;
+  padding: 0.5em;
+  font-size: 0.5em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(14, 127, 180, 0.9882352941);
+  outline: none;
+  resize: none;
+}
+#contact #cntact_card #right form .row_3 textarea::-webkit-scrollbar {
+  width: 0px;
+}
+#contact #cntact_card #right form .row_4 button {
+  background-color: rgba(14, 127, 180, 0.9882352941);
+  border-radius: 0.3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 3px;
+  padding: 6px 8px;
+  text-decoration: none;
+  width: fit-content;
+  color: #f0f0f0;
+  border: 0.1em solid rgba(14, 127, 180, 0.9882352941);
+  font-size: 0.39em;
+  text-transform: capitalize;
+}
+#contact .footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1em;
+  justify-content: space-around;
+  margin-bottom: 0.5em;
+}
+#contact .footer div {
+  font-size: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 1 1 auto;
+}
+#contact .footer div p {
+  margin: 0px;
+}
+#contact .footer div .social_links {
+  color: rgba(14, 127, 180, 0.9882352941);
+  padding: 0px 4px;
+}
+
+@media (max-width: 768px) {
+  #contact h2, #contact h4, #contact p {
+    text-align: center;
+  }
+  #contact .footer div p {
+    margin: 0px;
+  }
+}/*# sourceMappingURL=contact.css.map */
